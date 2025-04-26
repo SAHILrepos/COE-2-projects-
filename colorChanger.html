@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            display: flex;
+            justify-self: center;
+            margin-top: 25px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10%;
+            font-family: 'Courier New', Courier, monospace;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); 
+            transition: 0.5s ease, box-shadow 0.3s ease, border-radius 0.25s ease; 
+        }
+
+        button:hover {
+            border-radius: 25px; 
+            box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); 
+        }
+
+        h1{
+            
+                font-family: 'Courier New', Courier, monospace;
+                display:flex;
+                justify-self: center;
+                text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5); 
+                
+            
+
+        }
+        #btn1{
+            background: linear-gradient(to right, #fd6262, #fd73ad);
+
+
+        }
+        #btn2{
+            background: linear-gradient(to right, #65ff65, #f7f582);
+
+
+        }
+        #btn3{
+            background: linear-gradient(to right, #6ddafc, #9ff39f);
+
+
+        }
+        #btn4{
+            background: linear-gradient(to right, #dcf763, #f8cb4d);
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>BGColour Changer !!</h1>
+    <button id="btn1" onclick="red()">RED</button>
+    <button id="btn2" onclick="green()">GREEN</button>
+    <button id="btn3" onclick="blue()">BLUE</button>
+    <button id="btn4" onclick="yellow()">YELLOW</button>
+    <script>
+        function red() {
+            document.body.style.backgroundColor = "red";
+        }
+        function blue() {
+            document.body.style.backgroundColor = "blue";
+        }
+        function green() {
+            document.body.style.backgroundColor = "green";
+        }
+        function yellow() {
+            document.body.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>
